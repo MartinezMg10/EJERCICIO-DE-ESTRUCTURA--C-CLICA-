@@ -15,8 +15,14 @@ while (numero > 0)
 /* 
 2. Imprimir números aleatorios en el rango de 0 a 10 mientras el número no sea igual a cero. */
 
+/* do {
+    let numero =Math.random()*10
+    if(numero > 0){
+    console.log(numero)
+    }
+  } while (numero != 0);
 
-
+ */
 /* 
 3. Imprimir 20 números aleatorios en el rango de 1 a 1000. */
 
@@ -54,40 +60,39 @@ Jóvenes 13 - 29
 Adultos 30 - 59
 Viejos 60 en adelante */
 
-/* let ninos,jovenes,adultos,viejos,pesoAdultos,pesoJovenes,pesoNinos,pesoViejos = 0
+/*  let ninos,jovenes,adultos,viejos,pesoAdultos,pesoJovenes,pesoNinos,pesoViejos = 0
 let promedioA,promedioJ,promedioN,promedioV = 0
 
 for(let i=1;i<=20;i++){
     let edad=+prompt(`Digita la edad de la persona numero ${i}`)
-    let peso =+prompt(`Digita la edad de la persona numero ${i}`)
+    let peso =+prompt(`Digita el peso de la persona numero ${i}`)
 
     if(edad >= 0 && edad <= 12){
         ninos++
         pesoNinos+=peso
+        promedioN = pesoNinos / ninos
     }else if(edad >= 13 && edad <= 23){
         jovenes++
         pesoJovenes+=peso
+        promedioJ = pesoJovenes / jovenes
     }else if(edad >= 30 && edad <= 59){
         adultos++
         pesoAdultos+=peso
+        promedioA = pesoAdultos / adultos
     }else if(edad >= 60){
         viejos++
         pesoViejos+=peso
+        promedioV = pesoViejos / viejos
     } 
 }
-promedioN = pesoNinos / ninos
-promedioJ = pesoJovenes / jovenes
-promedioA = pesoAdultos / adultos
-promedioV = pesoViejos / viejos
-
 
 console.log(`El promedio de peso en niños fue de ${promedioN}`)
 console.log(`El promedio de peso en jovenes fue de ${promedioJ}`)
 console.log(`El promedio de peso en adultos fue de ${promedioA}`)
 console.log(`El promedio de peso en viejos fue de ${promedioV}`)
 
-
  */
+ 
 /* 6. Diseñen un algoritmo que imprima la siguiente secuencia:
 1.1.1 - 1.1.2 - 1.1.3 - 1.1.4
 1.2.1 - 1.2.2 - 1.2.3 - 1.2.4
@@ -95,8 +100,17 @@ console.log(`El promedio de peso en viejos fue de ${promedioV}`)
 1.4.1 - 1.4.2 - 1.4.3 - 1.4.4
 1.5.1 - 1.5.2 - 1.5.3 - 1.5.4 */
 
+/* const CADENA = "1"
+
+for(let i =1;i <=5;i++){
+    for(let j =1;j<=4;j++){
+        document.write(CADENA + i + j + " ")
+    }document.write("</br>")
+}
 
 
+
+ */
 
 /* 7. Un Zoólogo pretende determinar el porcentaje de animales que hay en las siguientes tres
 categorías de edades: de 0 a 1 año, de más de 1 año y menos de 3 y de 3 o más años. El
@@ -157,10 +171,10 @@ if(animal == 1){
 
 }
 
-console.log(`El promedio de la edad 1 fue de ${promedio1}%`)
-console.log(`El promedio de la edad 2 fue de ${promedio2}%`)
-console.log(`El promedio de la edad 3 fue de ${promedio3}%`) */
-
+console.log(`El porcentaje de ${animal} en la edad de 0 a 1 año fue de ${promedio1}%`)
+console.log(`El porcentaje de ${animal} en la edad de 0 a 1 año fue de ${promedio2}%`)
+console.log(`El porcentaje de ${animal} en la edad de 0 a 1 año fue de ${promedio3}%`) 
+ */
 
 /* 
 8. Una compañía de seguros tiene contratados a una cantidad N vendedores. Cada vendedor
@@ -238,27 +252,27 @@ console.log(`El sueldo total del vendedor este mes es de ${sueldoTotal}`)
 y 5 notas; calculando la nota final de acuerdo a los siguientes porcentajes: Dos (2) notas valen
 el 40% y las otras tres (3) valen el 60%.  */
 
-let nombre = prompt("Digite el nombre del estudiante")
+/* let nombre = prompt("Digite el nombre del estudiante")
 
-let notaT,notaT2 = 0
-let nota,nota2 = 0
-let porcentaje1,porcentaje2 = 0
-let total1,total2 = 0
+let notaT1=0,notaT2 = 0
+let nota1= 0,nota2 = 0
+let porcentaje1=0,porcentaje2 = 0
+let total1 = 0,total2 = 0
 let notaFinal = 0
 
 for(let i=1 ;i <= 2;i++){
-    nota = parseFloat(prompt("Digite la nota"))
-    notaT += nota
+    nota1 = parseFloat(prompt(`Digite la ${i} nota`))
+    notaT1 += nota1 
 }
-total1 = notaT/2
-porcentaje1 =total1 * 0.4
 
-for(let i=1 ;i <= 3;i++){
-     nota2 = parseFloat(prompt("Digite la nota"))
+for(let i=3 ;i <= 5;i++){
+     nota2 = parseFloat(prompt(`Digite la ${i} nota`))
      notaT2 += nota2 
 }
 total2 = notaT2/3
+total1 = notaT1/2
+porcentaje1 = total1 * 0.4
 porcentaje2 = total2 * 0.6
 
-notaFinal = porcentaje1 +porcentaje2
-console.log(`La nota final de ${nombre} es de ${notaFinal}`)
+notaFinal = porcentaje1 + porcentaje2
+console.log(`La nota final de ${nombre} es de ${notaFinal}`) */
